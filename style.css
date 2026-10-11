@@ -1,0 +1,41 @@
+/* Shared look for the three legal pages. Matches the game's palette. */
+:root {
+  --bg: #0A1020;
+  --panel: #141C2E;
+  --edge: rgba(168, 255, 244, 0.16);
+  --text: #EAF2FF;
+  --dim: rgba(234, 242, 255, 0.62);
+  --accent: #4FE3D6;
+  --gold: #FFC14D;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 48px 20px 80px;
+  background: radial-gradient(120% 80% at 50% 0%, #1B2744 0%, var(--bg) 60%);
+  color: var(--text);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 720px; margin: 0 auto; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+header .tick { width: 4px; height: 26px; border-radius: 2px; background: var(--accent); }
+h1 { font-size: 26px; letter-spacing: 0.4px; margin: 0; }
+h2 {
+  font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--accent); margin: 38px 0 10px;
+}
+h3 { font-size: 16px; margin: 24px 0 6px; }
+p, li { color: var(--dim); }
+strong { color: var(--text); }
+a { color: var(--accent); }
+.meta { color: rgba(234,242,255,0.42); font-size: 13px; margin: 0 0 28px; }
+.card {
+  background: var(--panel); border: 1px solid var(--edge);
+  border-radius: 16px; padding: 20px 22px; margin: 18px 0;
+}
+.card.gold { border-color: rgba(255,193,77,0.35); }
+hr { border: none; border-top: 1px solid rgba(255,255,255,0.09); margin: 56px 0 0; }
+nav { margin-top: 40px; font-size: 14px; }
+nav a { margin-right: 18px; }
+footer { color: rgba(234,242,255,0.35); font-size: 13px; margin-top: 40px; }
